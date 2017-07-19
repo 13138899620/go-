@@ -1,0 +1,4 @@
+routers:
+1.定义具体的HTTP API访问入口URL;
+2.routers注册路由建立与controllers包内handler之间的关联;
+3.中间件middlewares用于自定义过滤处理请求，数字签名校验，权限校验;

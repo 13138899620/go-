@@ -1,0 +1,6 @@
+controllers包:
+1. HTTP API具体实现包，依据不同业务模块细分成多个子文件夹(包)进行管理
+2. controller层可验证用户请求参数，确认数据的合法性；
+3. POST操作建议采用统一的参数名称，如都用item做参数名称：
+item:"user entity json string" 
+item:"period entity json string" 

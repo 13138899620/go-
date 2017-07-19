@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>webapp</title>
+    <link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="./bootstrap-3.3.5/js/html5shiv.min.js"></script>
+    <script src="./bootstrap-3.3.5/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="./scripts/lib/jquery-1.12.2.min.js"></script>
+    <script src="./bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="./CryptoJS/rollups/aes.js"></script>
+    <script src="./CryptoJS/rollups/md5.js"></script>
+    <script src="./CryptoJS/rollups/hmac-sha1.js"></script>
+    <script src="./scripts/AesHelper.js"></script>
+    <script src="./scripts/index.js"></script>
+    <style>
+        .no-border-radius {
+            border-radius: 0 !important;
+            -webkit-border-radius: 0 !important;
+        }
+    </style>
+</head>
+<body>
+<!--顶部菜单栏-->
+<nav class="navbar navbar-inverse no-border-radius" style="margin-bottom: 0;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Home</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row" style="margin: 10px 0 10px 0;">
+            <div >用户列表：
+                <button class="btn btn-info" id="getuserlist">获取用户列表</button>
+            </div>
+            <div id="user_list_area">
+                <ul id="user_list">
+
+                </ul>
+            </div>
+    </div>
+    <div class="row" style="margin: 10px 0 10px 0;">
+        <div >用户列表(传输过程加密)：
+            <button class="btn btn-info" id="getuserlistencrypt">获取用户列表(传输过程加密)</button>
+        </div>
+        <div id="user_list_area_encrypt">
+            <ul id="user_list_encrypt">
+
+            </ul>
+        </div>
+    </div>
+
+    <!--添加用户-->
+    <div class="row">
+        <div class="panel panel-info">
+            <div class="panel-heading">添加用户</div>
+            <div class="panel-body">
+                <div>用户名：<input id="userName" type="text" /></div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default" id="btn_addUser">添加</button>
+            </div>
+        </div>
+    </div>
+
+    <!--添加用户加密传输数据-->
+    <div class="row">
+        <div class="panel panel-info">
+            <div class="panel-heading">添加用户数据加密传输</div>
+            <div class="panel-body">
+                <div>用户名：<input id="userName_encrypt" type="text" /></div>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-default" id="btn_addUser_encrypt">添加(POST 数据加密)</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

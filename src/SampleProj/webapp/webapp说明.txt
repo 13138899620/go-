@@ -1,0 +1,6 @@
+1.webapp 采用HTML+JS模型
+2.安装NGINX：http://nginx.org/en/download.html
+3.NGINX 配置文件参考目录下的nginx.conf
+调整配置文件中ROOT指向位置
+root D:/GoWorkSpace/goprojs/src/hr360proj/webapp; 
+4.通过代理服务器NGINX转发API请求到GO

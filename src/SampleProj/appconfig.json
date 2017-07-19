@@ -1,0 +1,29 @@
+{
+	"MySqlCon":"mysql:123456@tcp(127.0.0.1:3306)/test?charset=utf8&parseTime=True&loc=Local",
+	
+	"IsDev":"true",
+	"EncryptCookieSecret":"ab#a123@fvwpokdi",
+	
+	"ErrorLogPath":"E:/proj/logs/error/log-%Y%M%D.log",
+	"InfoLogPath":"E:/proj/logs/info/log-%Y%M%D.log",
+	"WarnLogPath":"E:/proj/logs/warn/log-%Y%M%D.log",
+	"UserAgentLogPath":"E:/proj/logs/useragent/log-%Y%M%D.log",
+	
+	"RedisHost":"127.0.0.1:6379",
+	"RedisDB":"0",
+	"RedisPwd":"12345678",
+	
+	"SmtpServerSocket":"smtp.126.com:25",
+	"SmtpServer":"smtp.126.com",
+	"MailSender":"yun360assess@126.com",
+	"SenderPwd":"qaz1xsw2edc3vfr",
+	
+	"MSG_App_ID":"123456",
+	"MSG_App_Key":"testappkey",
+	
+	"IpWhiteList":"127.0.0.1,10.123.16.58",
+	"SystemErrorReminder":"stoneldeng",
+	
+	"FONT_HEITI_PATH":"D:/GoWorkSpace/yun360/src/fonts/heiti.ttf"
+	
+}

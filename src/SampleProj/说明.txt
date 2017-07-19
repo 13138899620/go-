@@ -1,0 +1,11 @@
+﻿1.appconfig.json 为应用程序全局配置文件，采用JSON格式进行定义
+2.appconfig.json 文件中公共KEY定义说明在global包中
+3.SampleProj 项目模板中，数据库采用MYSQL，在appconfig.json中配置正确的访问链接
+  开发环境MYSQL可以直接用：
+  测试数据库表user
+  字段        数据类型
+  Id         bigint
+  UserName   varchar(50)
+  EnableFlag tinyint(1)
+4.Redis服务器配置:appconfig.json 中指定RedisHost,RedisDB,RedisPwd(密码还是要配置的,要有好的习惯)
+  RedisDB指定DB,如想灵活配置,可以自行扩展
